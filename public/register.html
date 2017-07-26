@@ -1,0 +1,75 @@
+<!doctype html>
+<html class="nojs" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <!--<link rel="stylesheet" href="css/normalize.css">-->
+        <link rel="stylesheet" href="css/main.css">
+        <script src="https://www.gstatic.com/firebasejs/3.6.6/firebase.js"></script>
+		<script>
+		  // Initialize Firebase
+		  var config = {
+		    apiKey: "AIzaSyDfQd_erjUPl0rR8vVYvay5eYOPAoNQvn8",
+		    authDomain: "sampleapp-153414.firebaseapp.com",
+		    databaseURL: "https://sampleapp-153414.firebaseio.com",
+		    storageBucket: "sampleapp-153414.appspot.com",
+		    messagingSenderId: "856234215232"
+		  };
+		  firebase.initializeApp(config);
+		  
+		  
+		</script>
+		<script src="js/canvasjs.min.js"</script>
+		<script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <script src="js/jquery_min"></script>
+        <script src="js/firebase.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/results.js"></script>
+    </head>
+    <div class="container">
+    <div class="header">
+    	<div id="logo" style="float: left;"><img src="img/timebound.png" alt="timebound logo" height="100" width="100"></div>
+    	<h1>Timebound Survey App</h1>
+    	
+    </div>
+    <div class="nav">
+    	<ul>
+        	<a href="index.html">Home</a>
+			<a href="results.html">Qusetions</a>
+			<a href="users.html">Users</a>
+			</ul>
+        </nav>
+    <body>
+        <div class="content">
+			<h2>Register account</h2>
+    	<div class="signup">
+    		<table>
+			  <tr>
+			    <td><label for "newEmail">Email:</label></td>
+			    <td><input id="newEmail" type="email" placeholder="email"></td>		    
+			  </tr>
+			  <tr>
+			    <td><label for "newPassword">Password:</label></td> 
+			    <td><input id="newPassword" type="password" placeholder="password"></td> 			    
+			  </tr>
+			  <tr>
+			  	<td><label for "confirmPassword">Confirm Password:</label></td>
+			  	<td><input id="confirmPassword" type="password" placeholder="confirmPassword"></td>
+			  </tr>
+			</table>
+			<button id="registerButton" onclick="register()">
+        		Register
+        	</button>
+    	</div>
+		</div><!--content-->
+		
+    </body>
+    </div>
+</html>

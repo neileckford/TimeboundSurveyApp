@@ -1,0 +1,68 @@
+<!doctype html>
+<html class="nojs" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <!--<link rel="stylesheet" href="css/normalize.css">-->
+        <link rel="stylesheet" href="css/main.css">
+        <script src="https://www.gstatic.com/firebasejs/3.6.6/firebase.js"></script>
+		<script>
+		  // Initialize Firebase
+		  var config = {
+		    apiKey: "AIzaSyDfQd_erjUPl0rR8vVYvay5eYOPAoNQvn8",
+		    authDomain: "sampleapp-153414.firebaseapp.com",
+		    databaseURL: "https://sampleapp-153414.firebaseio.com",
+		    storageBucket: "sampleapp-153414.appspot.com",
+		    messagingSenderId: "856234215232"
+		  };
+		  firebase.initializeApp(config);
+		  
+		  
+		</script>
+        <link rel="stylesheet" href="css/main.css">
+		<script src="js/canvasjs.min.js"</script>
+		<script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <script src="js/jquery_min"></script>
+        <script src="js/firebase.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/results.js"></script>
+    </head>
+    <div class="container">
+    <div class="header">
+    	<div id="logo" style="float: left;"><img src="img/clock.jpg" alt="Smiley face" height="100" width="100"></div>
+    	<h1>Timebound Survey App</h1>
+    	<div class="loginContainer">
+        	<input id="txtEmail" type="email" placeholder="email"><br/>
+        	<input id="txtPassword" type="password" placeholder="password"><br/>
+        	
+        	<button id="btnLogin" onclick="signin()">
+        		Log In
+        	</button>
+        	<button id="btnLogout" onclick="signout()">
+        		Log Out
+        	</button>
+        </div>
+    </div>
+    <div class="nav">
+    	<ul>
+        	<a href="index.html">Home</a>
+			<a href="results.html">Questions</a>
+			<a href="users.html">Users</a>
+			</ul>
+        </nav>
+    <body>
+        <div class="content">
+        	<div id="showQuestion"></div>
+        	<div id="analysis"></div>
+		</div><!--content-->
+		
+    </body>
+    </div>
+</html>
